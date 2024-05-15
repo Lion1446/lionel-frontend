@@ -264,11 +264,12 @@ class _InventoryScreenState extends State<InventoryScreen>
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    [1, 2].contains(widget.stateData["user"]["user_type"])
+                    [1, 2, 3].contains(widget.stateData["user"]["user_type"])
                         ? GestureDetector(
                             onTap: [
                               1,
-                              2
+                              2,
+                              3,
                             ].contains(widget.stateData["user"]["user_type"])
                                 ? () async {
                                     if (inventoryItemsClosing.isEmpty &&
